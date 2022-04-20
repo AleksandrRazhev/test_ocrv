@@ -4,8 +4,6 @@ import ErrorBoundary from '../ErrorBoundary/ErrorBoundary';
 
 const ReactChartComponent = (props) => {
 
-  console.log(props);
-
   const month = ['January', 'February', 'March', 'April', 'May', 'June',
     'July', 'August', 'September', 'October', 'November', 'December'];
 

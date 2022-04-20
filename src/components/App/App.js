@@ -34,9 +34,6 @@ const App = () => {
     const userSelect = users[id];
     const dataUserSelect = data.filter(item => item.name === userSelect);
     setUser(dataUserSelect);
-    // const number = users.forEach((item, i) => {
-    //   if (user[0].name === item) return i;
-    // });
     const color = () => {
       if (id % 3 === 0) {
         setUserColor('red');
@@ -68,7 +65,7 @@ const App = () => {
     return users.map((item, i) => {
       return (
         <label key={i} className='app__label'>
-          <input type="radio" id={i} name='radio' checked={!user ? false : null} onChange={e => onChange(e)}></input>
+          <input type="radio" id={i} name='radio' onChange={e => onChange(e)}></input>
           <span>{item}</span>
         </label>
       );
