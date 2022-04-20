@@ -1,0 +1,28 @@
+.app {
+  &__container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  &__draw {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__canvas {
+    background-color: rgb(232, 240, 219);
+  }
+}
